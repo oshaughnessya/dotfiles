@@ -73,8 +73,14 @@ for i in groups:
         #     desc="move focused window to group {}".format(i.name)),
     ])
 
+layout_theme = { "border_width" : 2,
+                 "margin" : 6,
+                 "border_focus" : "e1acff",
+                 "border_normal" : "1D2330"
+                 }
+
 layouts = [
-    layout.MonadTall(),
+    layout.MonadTall(**layout_theme),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -117,7 +123,8 @@ screens = [
                 widget.Battery(),
                 widget.BatteryIcon(),
             ],
-            24,
+            opacity=0.8,
+            size=24,
         ),
     ),
 ]

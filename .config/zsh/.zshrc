@@ -15,7 +15,7 @@ compinit
 autoload -U colors && colors
 PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-# Set git RPrompt
+# Set git RPrompt - doesn't work for bare repositories
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
@@ -32,10 +32,9 @@ _comp_options+=(globdots)
 
 # alias
 alias ls="ls -lA --color=auto"
-alias shutdown="shutdown now"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >/dev/null
 
-/usr/bin/paleofetch
+/usr/local/bin/paleofetch
