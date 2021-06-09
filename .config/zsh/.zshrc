@@ -23,6 +23,9 @@ setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%b'
 
+# Add to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # Enable Tab Complete
 autoload -Uz compinit
 zstyle ':completion:*' menu select
@@ -37,4 +40,4 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >/dev/null
 
-/usr/local/bin/paleofetch
+$HOME/.local/bin/paleofetch
