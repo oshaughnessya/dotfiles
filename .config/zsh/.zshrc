@@ -36,6 +36,7 @@ _comp_options+=(globdots)
 # alias
 alias ls="ls -lA --color=auto"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+alias pdf="evince"
 
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >/dev/null

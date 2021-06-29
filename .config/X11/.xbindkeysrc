@@ -1,3 +1,6 @@
 "alacritty"
 	m:0x0 + c:156
 	XF86Launch1
+"cd Photos && scrot"
+    m:0x0 + c:107
+    Print
