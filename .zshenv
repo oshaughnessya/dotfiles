@@ -8,4 +8,4 @@ export EDITOR='vim'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Set Surf as browser
-export BROWSER="surf"
+export BROWSER="firefox"
