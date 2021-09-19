@@ -39,6 +39,6 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias pdf="evince"
 
 # Load zsh-syntax-highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >/dev/null
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh >/dev/null
 
 $HOME/.local/bin/paleofetch

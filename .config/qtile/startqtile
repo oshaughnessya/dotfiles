@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while true; do
+    nitrogen --restore &
+    picom &
+    xbindkeys -f $HOME/.config/X11/.xbindkeysrc &
+    exec qtile
+done
