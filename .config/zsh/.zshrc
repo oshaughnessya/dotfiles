@@ -37,6 +37,7 @@ _comp_options+=(globdots)
 alias ls="ls -lA --color=auto"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias pdf="evince"
+alias update="sudo emerge --sync && sudo emerge -avuDN @world"
 
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh >/dev/null
