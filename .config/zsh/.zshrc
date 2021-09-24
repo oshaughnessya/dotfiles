@@ -40,6 +40,9 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias pdf="evince"
 alias update="sudo emerge --sync && sudo emerge -avuDN @world"
 
+# Set GPG_TTY for use of signed git commits
+export GPG_TTY=$(tty)
+
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh >/dev/null
 
