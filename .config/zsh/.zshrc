@@ -34,6 +34,7 @@ compinit
 _comp_options+=(globdots)
 
 # alias
+alias sudo="doas"
 alias ls="ls -lA --color=auto"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias pdf="evince"

@@ -9,3 +9,6 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Set Surf as browser
 export BROWSER="firefox"
+
+# Allow use of GPG
+export GPG_TTY=$(tty)
